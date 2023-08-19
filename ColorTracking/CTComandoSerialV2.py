@@ -131,6 +131,7 @@ def Marca (colormarca):
             if not DatosMask==None:
                 if DatosMask[2]>=70000.0:
                     print("Fin del tracking")
+                    envioSerialDatos([0,0,0]) # envio de lista de finalizacion 0,0,0
                     break
 
     cv2.destroyAllWindows() # Se cierran todas las ventanas abiertas al acabar el bucle
